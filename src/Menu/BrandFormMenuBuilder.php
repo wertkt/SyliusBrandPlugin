@@ -65,10 +65,10 @@ final class BrandFormMenuBuilder
                 self::EVENT_NAME
             );
         } else {
-            $this->eventDispatcher->dispatch(
-                new BrandMenuBuilderEvent($this->factory, $menu, $options['brand']),
-                self::EVENT_NAME
-            );
+            //$this->eventDispatcher->dispatch(
+            //    new BrandMenuBuilderEvent($this->factory, $menu, $options['brand']),
+            //    self::EVENT_NAME
+            //);
         }
 
         return $menu;
